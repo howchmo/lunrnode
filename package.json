@@ -1,0 +1,22 @@
+{
+  "name": "lunrnode",
+  "version": "1.0.0",
+  "description": "A test project for how to use elasticlunr.js in node.js.",
+  "main": "lunr_search_constitution.js",
+  "scripts": {
+    "test": "node lunr_search_constitution.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/howchmo/lunrnode.git"
+  },
+  "author": "Howchmo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/howchmo/lunrnode/issues"
+  },
+  "homepage": "https://github.com/howchmo/lunrnode#readme",
+  "dependencies": {
+    "elasticlunr": "^0.9.5"
+  }
+}
