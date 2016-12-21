@@ -1,0 +1,18 @@
+<html>
+<head>
+	<title>Combining Jquery Mobile Autocomplete and lunr.js</title>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/jquery-ui.min.js"></script>
+	<script src="js/jquery.mobile.min.js"></script>
+	<script src="js/nativedroid2.js"></script>
+	<script src="js/elasticlunr.js"></script>
+	<script src="js/lunrnode.js"></script>
+	<script src="js/nd2settings.js"></script>
+</head>
+<body>
+	<form class="ui-filterable">
+		<input id="autocomplete-input" data-type="search" placeholder="Search USA Constitution...">
+	</form>
+	<ul id="autocomplete" data-role="listview" data-inset="true" data-filter="true" data-input="#autocomplete-input"></ul>
+</body>
+</html>
