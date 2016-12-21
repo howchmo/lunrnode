@@ -1,3 +1,5 @@
+//
+
 $( document ).on( "pagecreate", "body", function()
 {
 	$.ajaxSetup({beforeSend: function(xhr)
@@ -26,11 +28,12 @@ $( document ).on( "pagecreate", "body", function()
 				var idx = index.search(value);
 				$.each( idx, function ( i, val )
 				{
-					html += "<li>" + val.ref + "</li>";
+					html += "<div data-role='collapsible'><h5>" + val.ref + "</h5><p>"+index.documentStore.docs[val.ref].text+"</p></div>";
 				});
 				$ul.html( html );
 				$ul.listview( "refresh" );
 				$ul.trigger( "updatelayout");
+				$ul.enhanceWithin();
 			}
 		});
 	});
