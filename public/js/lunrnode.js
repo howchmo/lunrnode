@@ -1,4 +1,7 @@
 //
+String.prototype.capitalizeFirstLetter = function() {
+	return this.charAt(0).toUpperCase() + this.slice(1);
+}
 
 $( document ).on( "pagecreate", "body", function()
 {
@@ -30,6 +33,7 @@ $( document ).on( "pagecreate", "body", function()
 				{
 					var text = index.documentStore.docs[val.ref].text;
 					text = text.replace(value, "<span class='search-highlight'>"+value+"</span>");
+					text = text.replace(value.capitalizeFirstLetter(), "<span class='search-highlight'>"+value.capitalizeFirstLetter()+"</span>");
 					html += "<div data-role='collapsible'><h5>" + val.ref + "</h5><p>"+text+"</p></div>";
 				});
 				$ul.html( html );
