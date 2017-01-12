@@ -1,0 +1,6 @@
+.search-highlight {
+	font-weight:bold;
+/*	font-style:italic; */
+	color:teal;
+	border: 1px solid teal;
+}
